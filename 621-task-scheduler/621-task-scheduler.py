@@ -1,3 +1,7 @@
+'''
+못 품
+https://rollingsnowball.tistory.com/170 풀이 참고
+'''
 class Solution:
     def leastInterval(self, tasks: List[str], n: int) -> int:
         if n == 0:
