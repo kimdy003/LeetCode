@@ -1,14 +1,14 @@
 class Solution:
     def twoCitySchedCost(self, costs: List[List[int]]) -> int:
         N = len(costs) // 2
-        tem = []
+        temp = []
         minCost = 0
         for A, B in costs:
-            tem.append(B - A)
+            temp.append(B - A)
             minCost += A
         
-        tem.sort()
+        temp.sort()
         for i in range(N):
-            minCost += tem[i]
+            minCost += temp[i]
         return minCost
         
