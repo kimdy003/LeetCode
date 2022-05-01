@@ -14,10 +14,10 @@ class Solution:
         total = 0
         for num in nums:
             total += num
-            if total > threshold:
+            if total > threshold: # threshold보다 커지면 split한다
                 total = num
                 count += 1
-                if count > m:
+                if count > m:  # split를 했을때 m보다 커지면 False
                     return False
         return True
         
