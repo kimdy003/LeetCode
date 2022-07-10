@@ -23,10 +23,6 @@ class Solution:
         temp = board[i][j]
         board[i][j] = '.'
         
-        # flag = False
-        # for dy, dx in [[0, 1], [0, -1], [1, 0], [-1, 0]]:
-        #     ny, nx = i + dy, j + dx
-        #     flag = flag or self.dfs(board, ny, nx, word[1:])
         res = self.dfs(board, i+1, j, word[1:]) or self.dfs(board, i-1, j, word[1:]) \
     or self.dfs(board, i, j+1, word[1:]) or self.dfs(board, i, j-1, word[1:])
             
