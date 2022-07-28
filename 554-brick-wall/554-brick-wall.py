@@ -9,5 +9,5 @@ class Solution:
             for brick in line[:-1]:
                 i += brick
                 d[i] += 1
-        print(len(wall), d)
+        
         return len(wall) - max(d.values(), default=0)
